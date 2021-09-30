@@ -7,7 +7,7 @@ from wtforms.validators import DataRequired #Length, EqualTo
 class newActorForm(FlaskForm):
     #what we put inside this clas is whater data fields we intend our form to have
     name = StringField('Name', validators=[DataRequired()])
-    hiringpirce = StringField('Hiring Price')
+    hiringprice = StringField('Hiring Price')
     age = IntegerField('Age', validators=[DataRequired()])
     nationality = StringField('Nationality')
     best_film = StringField('Best Performance', validators=[DataRequired()])

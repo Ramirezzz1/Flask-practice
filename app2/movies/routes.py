@@ -21,6 +21,7 @@ def addactor():
                 'hiringprice': form.hiringprice.data,
                 'bestperfomance': form.best_film.data
             }
+            print(f'dictionary made: {actor_dict}')
             flash('from validated', category='alert-info')
             flash(f'{actor_dict}', category='alert-info')
         else:
